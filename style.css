@@ -1,0 +1,19 @@
+table, tr, td{
+    border-color:black;
+    border:1px solid;
+}
+.score{
+    background-color:aquamarine;
+}
+#head{
+    background-color:lightgray;
+}
+.totalCol{
+    background-color:green;
+}
+.outCol{
+    background-color:greenyellow;
+}
+.inCol{
+    background-color:springgreen;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stick Ball Game</title>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="select">
+       <span>Course</span>
+        <select id="courseSelect" onchange="loadSpecificCourse(this.value)">
+
+        </select>
+    </div>
+    <div style="display: none;" class="playerCount">
+        <span>Players</span>
+        <select id="playerSelect" onchange="loadScoreCard(this.value)">
+            <option class="null" value=""></option>
+            <option class="value" value="1">1</option>
+            <option class="value" value="2">2</option>
+            <option class="value" value="3">3</option>
+            <option class="value" value="4">4</option>
+        </select>
+    </div>
+    <div style="display: none;" id="divForTheDumbestGameEver">
+
+    </div>
+
+</body>
+</html>

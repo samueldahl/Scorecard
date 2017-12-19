@@ -1,0 +1,25 @@
+#createListBox{
+    background-color:cyan;
+    padding:5px;
+}
+#listBoxBody{
+    background-color: dodgerblue;
+    padding:5px;
+}
+.list{
+    background-color:deepskyblue;
+    padding:5px;
+}
+.task{
+    background-color:white;
+    padding:5px;
+}
+.taskInput{
+    border:0px;
+}
+.dankMemes{
+    background-color:red;
+}
+.normieMemes{
+    background-color:red;
+}
