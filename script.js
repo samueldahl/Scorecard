@@ -167,10 +167,10 @@ function loadScoreBoxes(teeValue, playerValue){
         var scoreChange = (function () {
             var oldScore = 0;
             var localPlayer = playerValue;
-            var totalScore = 0;
             return function () {
                 var score = parseInt(this.value);
                 if (isNaN(score)) return;
+                var totalScore = parseInt($('#total' + localPlayer).html());
                 totalScore += score - oldScore;
                 oldScore = score;
                 $('#total' + localPlayer).html(totalScore);
@@ -183,7 +183,7 @@ function loadScoreBoxes(teeValue, playerValue){
         input.onchange = scoreChange;
         td = document.getElementById('score' + playerValue).appendChild(td);
     }
-    $('#score'+playerValue).append('<td id="total' + playerValue + '"></td>');
+    $('#score'+playerValue).append('<td id="total' + playerValue + '">0</td>');
     $('#score'+playerValue).prepend('<td>Score</td>');
 }
 
