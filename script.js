@@ -197,7 +197,7 @@ xhttp.onreadystatechange = function() {
         showPlayerCount();
     }
 };
-xhttp.open("GET", "http://golf-courses-api.herokuapp.com/courses/"+courseId, true);
+xhttp.open("GET", "https://golf-courses-api.herokuapp.com/courses/"+courseId, true);
 xhttp.send();
 }
 
